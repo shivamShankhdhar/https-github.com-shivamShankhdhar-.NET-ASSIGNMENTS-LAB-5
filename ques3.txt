@@ -33,13 +33,13 @@ namespace MethodsFirstProg
         }
         public static void mul(int a, int b)
         {
-            Console.WriteLine("Multiplication is : " + " " + (a * b);
+            Console.WriteLine("Multiplication is : " + " " + (a * b));
         }
         public static void div(int a, int b)
         {
             if (b > 0)
             {
-                Console.WriteLine("Division is : " + " " + (a / b);
+                Console.WriteLine("Division is : " + " " + (a / b));
             }else
             {
                 Console.WriteLine("For division denominator should be greater than 0");
