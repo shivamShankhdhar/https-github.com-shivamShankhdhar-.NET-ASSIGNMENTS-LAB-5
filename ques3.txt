@@ -14,8 +14,10 @@ namespace MethodsFirstProg
             Console.WriteLine("2 ----> Substract");
             Console.WriteLine("3 ----> Multiply");
             Console.WriteLine("4 ----> Divide");
-            int choice  = Convert.ToInt32(Console.ReadLine());  
+            int choice  = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter first number");
             int num1    = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second number");
             int num2    = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -52,3 +54,7 @@ namespace MethodsFirstProg
 
     }
 }
+
+/*Q3: Write a program to make a simple calculator that can add, subtract, multiply and
+divide using functions
+*/
