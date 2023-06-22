@@ -1,0 +1,42 @@
+
+Q2: Write a function to draw following parallelogram:
+
+**********
+ **********
+  **********
+   **********
+---CODE---
+
+namespace MethodsFirstProg
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            parallelogram_pattern();
+        }
+        public static void parallelogram_pattern()
+        {
+           for(int i =0;i < 4; i++)
+            {
+                //for space in starting
+                for(int j= 0; j < i; j++)
+                {
+                    Console.Write(" ");  
+                }
+                //for * printing
+                for (int k = 0; k < 10; k++)
+                {
+                    Console.Write("*");
+                }
+                //for spaces after *
+                for (int j = 4-i; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+    }
+}

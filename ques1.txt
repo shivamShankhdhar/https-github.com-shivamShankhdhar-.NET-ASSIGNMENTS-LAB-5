@@ -1,0 +1,26 @@
+Q1: Write a program to explain method in C#. Create a static function add() that
+accept two number from user and returns sum of the number.
+
+-----CODE------
+
+namespace MethodsFirstProg
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter first number");
+            int a    = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second number");
+            int b    = Convert.ToInt32(Console.ReadLine());
+            int _sum = sum(a, b);
+            Console.WriteLine("Sum of {0} and {1} : {2}", a, b, _sum);
+        }
+        public static int sum(int a, int b)
+        {
+            int sum = a + b;
+            return sum;
+        }
+
+    }
+}

@@ -1,0 +1,2 @@
+Q 6 : Write a program to find the sum of natural numbers up to n using recursive function.
+
