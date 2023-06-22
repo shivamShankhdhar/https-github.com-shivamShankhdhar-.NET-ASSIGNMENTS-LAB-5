@@ -2,3 +2,53 @@ Q3: Write a program to make a simple calculator that can add, subtract, multiply
 divide using functions
 
 --CODE--
+
+namespace MethodsFirstProg
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter you choice");
+            Console.WriteLine("1 ----> Add");
+            Console.WriteLine("2 ----> Substract");
+            Console.WriteLine("3 ----> Multiply");
+            Console.WriteLine("4 ----> Divide");
+            int choice  = Convert.ToInt32(Console.ReadLine());  
+            int num1    = Convert.ToInt32(Console.ReadLine());
+            int num2    = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1  :add(num1, num2); break;
+                case 2  : sub(num1, num2); break;
+                case 3  : mul(num1, num2); break;
+                case 4  : div(num1, num2); break;
+                default :Console.WriteLine("Wrong Choice");break;
+            }
+        }
+        public static void add(int a, int b)
+        {
+            Console.WriteLine(a + b);
+        }
+        public static void sub(int a, int b)
+        {
+            Console.WriteLine(a - b);
+        }
+        public static void mul(int a, int b)
+        {
+            Console.WriteLine(a * b);
+        }
+        public static void div(int a, int b)
+        {
+            if (b > 0)
+            {
+                Console.WriteLine(a / b);
+            }else
+            {
+                Console.WriteLine("For division denominator should be greater than 0");
+            }
+        }
+        
+
+    }
+}
